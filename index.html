@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header class="header content_section">
+    <header class="header">
       <nav class="header_menu">
         <ul class="header_menu-list">
           <li class="header_menu-item item">
@@ -24,7 +24,7 @@
           </li>
         </ul>
       </nav>
-      <a class="header_logo">
+      <a>
         <img
           class="header_logo-img"
           src="./images/logo-black.svg"
@@ -34,56 +34,56 @@
       <address class="contacts">
         <a class="contacts-item" href="tel:+99995555555">+9 999 555 5555</a>
         <a class="contacts-item" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <p class="contacts-item">наб. Принсенграхт 263-265, Амстердам</p>
+        <p class="contacts-item">наб. Принсенграхт 263-265,<br>  Амстердам</p>
       </address>
     </header>
     <main>
       <section class="cover">
         <h1 class="cover_title">
-          <span class="line-1">
-            <h1 class="cover_title-text">о</h1>
-            <h1 class="cover_title-text top">но</h1>
+          <span class="aligned-text">
+            <p class="cover_title-text">о</p>
+            <p class="cover_title-text letter-spacing-extended">но</p>
           </span>
-          <span class="line-2">
-            <h1 class="cover_title-text mid">те</h1>
-            <h1 class="cover_title-text mid-1">бе</h1>
+          <span class="aligned-text_center">
+            <p class="cover_title-text letter-spacing">те</p>
+            <p class="cover_title-text letter-spacing-extended">бе</p>
           </span>
-          <span class="line-3">
-            <h1 class="cover_title-text bottom-1">н</h1>
-            <h1 class="cover_title-text bottom-2">ад</h1>
-            <h1 class="cover_title-text bottom-3">о</h1>
+          <span class="aligned-text_right">
+            <p class="cover_title-text letter-spacing-extended">н</p>
+            <p class="cover_title-text letter-spacing">ад</p>
+            <p class="cover_title-text no-letter-spacing">о</p>
           </span>
         </h1>
         <div class="subline-button">
-          <h2 class="subline">аукцион вещей, в которые никто не верил</h2>
-          <button class="button">сделать ставку</button>
+          <p class="subline">аукцион вещей, в которые никто не верил</p>
+          <button class="button" type="button">сделать ставку</button>
         </div>
         <div class="overlay"></div>
       </section>
       <section class="lots" id="lots">
-        <h3 class="lots_heading">лоты</h3>
+        <h2 class="lots_heading">лоты</h2>
         <ul class="lots_list">
           <li class="lots_card">
             <a class="lots_link" href="#">
-              <div class="film_art card">
-                <p class="lots_title">
+              <article class="film_art card">
+                <h3 class="lots_title">
                   фильм режиссёра, который бросил киношколу
-                </p>
+                </h3>
                 <p class="lots_text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
                 </p>
                 <div class="overlay"></div>
-              </div>
+              </article>
             </a>
           </li>
           <li class="lots_card">
             <a class="lots_link" href="#">
-              <div class="book_art card">
-                <p class="lots_title">
+              <article class="book_art card">
+                <h3 class="lots_title">
                   книга, где описан один скучный день из жизни рекламного агента
-                </p>
+                </h3>
                 <p class="lots_text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
@@ -93,15 +93,15 @@
                   Джеймса Джойса?
                 </p>
                 <div class="overlay"></div>
-              </div>
+              </article>
             </a>
           </li>
           <li class="lots_card">
             <a class="lots_link" href="#">
-              <div class="pic_art card">
-                <p class="lots_title">
+              <article class="pic_art card">
+                <h3 class="lots_title">
                   картина, которую повторит даже 5-летний сын маминой подруги
-                </p>
+                </h3>
                 <p class="lots_text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
@@ -109,7 +109,7 @@
                   что это — одна из революционных работ Кандинского?
                 </p>
                 <div class="overlay"></div>
-              </div>
+              </article>
             </a>
           </li>
         </ul>
@@ -118,12 +118,12 @@
       <section class="about">
         <div class="about_logo">
           <div class="about_logo_circle">
-            <img class="about_logo_img" src="/images/logo-white.svg" />
+            <img class="about_logo_img" src="/images/logo-white.svg" alt="Логотип сайта"/>
           </div>
         </div>
         <div class="about_text">
-          <h3 class="about_heading">об аукционе</h3>
-          <p class="about_description desc-1">
+          <h2 class="about_heading">об аукционе</h2>
+          <p class="about_description gap">
             Здесь вы не встретите очередное пафосное собрание невероятно
             дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
             один аукцион. Потому что кому нужен дневник девочки-подростка или
@@ -142,10 +142,10 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="contacts f_c">
+      <address class="contacts footer_margin">
         <a class="contacts-item" href="tel:+99995555555">+9 999 555 5555</a>
         <a class="contacts-item" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <p class="contacts-item">наб. Принсенграхт 263-265, Амстердам</p>
+        <p class="contacts-item">наб. Принсенграхт 263-265,<br> Амстердам</p>
       </address>
       <nav class="footer_menu">
         <ul class="footer_menu-list">
@@ -161,23 +161,24 @@
         </ul>
       </nav>
       <ul class="sosials">
-        <li class="sosials_yt">
-          <a class="sosials_link" href="#"
-            ><img class="sosials_pic" src="/images/yt.svg" alt="youtube"
-          /></a>
+        <li>
+          <a href="#">
+            <img class="sosials_pic" src="/images/yt.svg" alt="youtube"/>
+          </a>
         </li>
-        <li class="sosials_vk">
-          <a class="sosials_link" href="#"
-            ><img class="sosials_pic" src="/images/vk.svg" alt="vk"
-          /></a>
+        <li>
+          <a href="#">
+            <img class="sosials_pic" src="/images/vk.svg" alt="vk"/>
+          </a>
         </li>
-        <li class="sosials_p">
-          <a class="sosials_link" href="#"
-            ><img
+        <li>
+          <a href="#">
+            <img
               class="sosials_pic"
               src="/images/pinterest.svg"
               alt="pinterest"
-          /></a>
+            />
+          </a>
         </li>
       </ul>
     </footer>
